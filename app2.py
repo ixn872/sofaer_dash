@@ -7,7 +7,7 @@ import dash_bootstrap_components as dbc
 
 from pages import (
     overview,
-    pricePerformance,
+#     pricePerformance,
     # portfolioManagement,
     # feesMins,
     # distributions,
@@ -39,7 +39,7 @@ def display_page(pathname):
     #     return distributions.create_layout(app)
     # elif pathname == "/dash-financial-report/news-and-reviews":
     #     return newsReviews.create_layout(app)
-    if pathname == "/dash-financial-report/":
+    if pathname == "./":
         return (
             overview.create_layout(app),
             pricePerformance.create_layout(app),
@@ -54,4 +54,4 @@ def display_page(pathname):
 
 if __name__ == "__main__":
     # app.run_server(debug=True,port=5000)
-    app.run_server(debug=False,port=5000)
+    app.run_server(debug=False) #,port=5000)
