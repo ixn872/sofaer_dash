@@ -20,20 +20,20 @@ import pathlib
 # get relative data folder
 PATH = pathlib.Path(__file__).parent
 DATA_PATH = PATH.joinpath("../data").resolve()
-# DATA_PATH2 = PATH.joinpath("..\..\..\..\..\Downloads").resolve()
-DATA_PATH2 = PATH.joinpath(r"C:\Users\n.douglas\Downloads").resolve()
+DATA_PATH2 = PATH.joinpath(".").resolve()
+DATA_PATH2 = PATH.joinpath(r".").resolve()
 
-df_current_prices = pd.read_csv(DATA_PATH.joinpath("df_current_prices.csv"))
-df_hist_prices = pd.read_csv(DATA_PATH.joinpath("df_hist_prices.csv"))
-df_avg_returns = pd.read_csv(DATA_PATH.joinpath("df_avg_returns.csv"))
-df_after_tax = pd.read_csv(DATA_PATH.joinpath("df_after_tax.csv"))
-df_recent_returns = pd.read_csv(DATA_PATH.joinpath("df_recent_returns.csv"))
-df_graph = pd.read_csv(DATA_PATH.joinpath("df_graph.csv"))
+# df_current_prices = pd.read_csv(DATA_PATH.joinpath("df_current_prices.csv"))
+# df_hist_prices = pd.read_csv(DATA_PATH.joinpath("df_hist_prices.csv"))
+# df_avg_returns = pd.read_csv(DATA_PATH.joinpath("df_avg_returns.csv"))
+# df_after_tax = pd.read_csv(DATA_PATH.joinpath("df_after_tax.csv"))
+# df_recent_returns = pd.read_csv(DATA_PATH.joinpath("df_recent_returns.csv"))
+# df_graph = pd.read_csv(DATA_PATH.joinpath("df_graph.csv"))
 
 df_monthly = pd.read_csv(DATA_PATH2.joinpath("monthly_table.csv"),sep = ';')
 df_stats = pd.read_csv(DATA_PATH2.joinpath("statistics.csv"))
-df_fund_facts = pd.read_csv(DATA_PATH.joinpath("df_fund_facts.csv"))
-df_price_perf = pd.read_csv(DATA_PATH.joinpath("df_price_perf.csv"))
+# df_fund_facts = pd.read_csv(DATA_PATH.joinpath("df_fund_facts.csv"))
+# df_price_perf = pd.read_csv(DATA_PATH.joinpath("df_price_perf.csv"))
 
 
 df_prices = pd.read_csv(DATA_PATH2.joinpath("res1.csv"))
